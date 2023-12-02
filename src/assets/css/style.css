@@ -32,9 +32,10 @@ body header nav ul a:hover {
   margin: 0 10px;
 }
 body main {
-  background-image: url(../img/icon/terminal.svg) !important;
+  background-image: url(../img/jpeg/pexels-antonio-batinić-4164418.jpg) !important;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 body main h1 {
   font-size: 5rem;
@@ -149,7 +150,6 @@ body #contact h3 {
 
 @media (max-width: 768px) {
   body main {
-    background-size: 200% 100%;
     background-repeat: no-repeat;
   }
   body main h1 {
@@ -161,7 +161,6 @@ body #contact h3 {
     font-size: 1rem !important;
   }
   body main {
-    background-size: 500% 130%;
     background-repeat: no-repeat;
   }
   body main h1 {
