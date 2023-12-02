@@ -1,0 +1,182 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #171717;
+  color: #EDEDED !important;
+  font-family: "Montserrat";
+}
+body header{
+  position:absolute;
+  top: -1000px
+}
+body header a span {
+  font-weight: 800;
+}
+body header nav button {
+  background-color: #EDEDED !important;
+}
+body header nav a {
+  color: #EDEDED !important;
+  font-weight: 700 !important;
+}
+body header nav ul a {
+  font-weight: 200 !important;
+  transition: 1s ease-out;
+}
+body header nav ul a:hover {
+  text-decoration: overline;
+  color: #da0037 !important;
+  transition: 0.5s ease-in;
+  margin: 0 10px;
+}
+body main {
+  background-image: url(../img/icon/terminal.svg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body main h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+body main h1 a {
+  text-decoration: none;
+  color: #EDEDED;
+}
+body section h2 {
+  font-weight: 200 !important;
+  font-size: 2rem;
+}
+body section h2 span {
+  font-size: 3.5rem;
+  font-weight: 800 !important;
+  line-height: 6rem;
+  transition: 0.5s ease-out;
+}
+body section button {
+  background-color: #da0037 !important;
+  transition: 0.3s ease-in;
+}
+body section button:hover {
+  background-color: #ffffff00 !important;
+  border: 1px solid #EDEDED !important;
+  transition: 0.5s ease-out;
+}
+body section button:hover a {
+  color: #da0037;
+}
+body section button a {
+  color: #EDEDED;
+  text-decoration: none;
+}
+body #about p {
+  font-weight: 200 !important;
+}
+body #about p span {
+  font-weight: 600;
+}
+body #projects .card {
+  height: 100%;
+  border: 7px solid #444444 !important;
+  background-color: #EDEDED !important;
+  color: #171717;
+}
+body #projects .card h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #da0037;
+}
+body #projects .card button:hover {
+  border-color: #da0037 !important;
+}
+body #contact h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #da0037;
+}
+
+.active-scroll {
+  position: absolute;
+  top: 0px;
+  background-color: #444444;
+  box-shadow: 2px 5px 7px 1px #0f0f0f !important;
+}
+
+.menu {
+  z-index: 1;
+  transition: 1s;
+}
+
+.disable {
+  display: none;
+}
+
+.span-red {
+  color: #da0037;
+}
+
+.main-h {
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+.section-h {
+  height: 80vh;
+}
+
+.text-w {
+  width: 75%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #da0037;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #171717;
+}
+
+.bg-black {
+  background-color: #171717;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  body main {
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+  }
+  body main h1 {
+    font-size: 3.5rem !important;
+  }
+}
+@media (max-width: 576px) {
+  body header a {
+    font-size: 1rem !important;
+  }
+  body main {
+    background-size: 500% 130%;
+    background-repeat: no-repeat;
+  }
+  body main h1 {
+    font-size: 1.3rem !important;
+  }
+  body #home h2 {
+    font-size: 1rem !important;
+  }
+  body #home h2 span {
+    font-size: 2rem !important;
+    line-height: 4rem;
+  }
+  body #about h2 {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
