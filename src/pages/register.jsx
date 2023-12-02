@@ -152,7 +152,7 @@ function Login() {
                     <Loginbtn
                         type="submit"
                         className="btn btn-primary mt-5">
-                        Login
+                        Registrar
                     </Loginbtn>
                     <div className="mt-3 d-flex justify-content-center">
                         <span className="text-center">Já tem uma conta?</span>

@@ -42,12 +42,12 @@ function Login() {
         let validationErrors = {}
         if (formData.email === "" || formData.email === null) {
             isvalid = false
-            validationErrors.username = "Secção username em branco"
+            validationErrors.email = "Secção email em branco"
             console.log(validationErrors.username)
         }
         if (formData.password === "" || formData.password === null) {
             isvalid = false
-            validationErrors.email = "Secção senha em branco"
+            validationErrors.password = "Secção senha em branco"
             console.log(validationErrors.email)
 
         }
@@ -123,13 +123,6 @@ function Login() {
                             
                         </span>
                     }
-                    {/* <div className="mb-3 form-check">
-                        <input
-                            type="checkbox"
-                            className="form-check-input"
-                            id="exampleCheck1" />
-                        <label className="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div> */}
                     <Loginbtn
                         type="submit"
                         className="btn btn-primary mt-5">
