@@ -74,7 +74,10 @@ function Login() {
                     alert("Registro feito com sucesso")
                     navigate("/")
                 })
-                .catch(err => console.log(err))
+                .catch(err =>{
+                    console.log(err)
+                    navigate("/")
+                } )
         }
 
     }

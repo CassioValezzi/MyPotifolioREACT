@@ -52,8 +52,7 @@ function Login() {
 
         }
         
-        setErrors(validationErrors)
-        setValid(isvalid)
+        
 
         axios.get('https://db-meuportifolio.vercel.app/users')
         .then(result => {
@@ -65,21 +64,25 @@ function Login() {
                         return(useState)
                     }
                     else if (user.email !== formData.email && user.password !== formData.password) {
-                        alert("senha e email errados")
+                        validationErrors.email = "Email errado"
+                        validationErrors.password = "Senha errada"
                         return(useState)
                         
                     }
                     else if (user.email !== formData.email) {
-                        alert("email errado")
+                        validationErrors.email = "Email errado"
                         return(useState)
                     }
                     else if (user.password !== formData.password) {
-                        alert("senha errada")
+                        validationErrors.password = "Senha errada"
                         return(useState)
                     }
                 })
             })
             .catch(err => console.log(err))
+
+        setErrors(validationErrors)
+        setValid(isvalid)
 
     }
 
