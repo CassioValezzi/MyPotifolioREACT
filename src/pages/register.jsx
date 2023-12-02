@@ -87,7 +87,7 @@ function Login() {
                     <div className="mb-3">
                         <label forhtml="username" className="form-label">Nome de Usuário</label>
                         <input
-
+                            autoComplete="give-name"
                             type="username"
                             className="form-control"
                             // id="username"
@@ -99,7 +99,7 @@ function Login() {
                     <div className="mb-3">
                         <label forhtml="email" className="form-label">Email</label>
                         <input
-                            autoComplete="username"
+                            autoComplete="email"
                             type="email"
                             className="form-control"
                             // id="email"
