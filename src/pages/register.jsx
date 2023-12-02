@@ -58,10 +58,11 @@ function Login() {
         } else if (formData.password.length < 8) {
             isvalid = false
             validationErrors.password = "Senha menor que 8 caractéres"
-            if (formData.cpassword !== formData.password) {
-                isvalid = false
-                validationErrors.cpassword = "senhas não correspondem"
-            }
+            
+        }
+        if (formData.cpassword !== formData.password) {
+            isvalid = false
+            validationErrors.cpassword = "senhas não correspondem"
         }
         setErrors(validationErrors)
         setValid(isvalid)
